@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>EB Units</title>
+<link rel="stylesheet" th:href="@{/css/getUnit.css}">
+
+
+<body>
+	<div class="container">
+		<form action="/calculate" method="put">
+
+
+			<h3>EB Calculator</h3>
+
+		<div class="select">
+				<label class="select">Tariff check</label> <select
+					class="form-select" aria-label="Default select example" name="Tarrif">
+
+					<option selected>Select the Tariff</option>
+					<option value="Domestic">Domestic</option>
+					<option value="Industrial">Industrial</option>
+					<option value="Commercial">Commercial</option>
+				</select>
+			</div> 
+			<div class="input">
+				<label class="textlabel" for="unit">Consumed Units</label> 
+				<input
+					type="text" id="unit" name="ebUnits">
+			</div>
+
+
+			<div class="btn">
+				<button type="submit">Calculate</button>
+			</div>
+			<div class="anwser">
+				
+				
+			<table class="table" >
+           <thead class = "thead-dark">
+           <tr>
+	           <th> Tariff </th>
+	           <th> Units </th>
+	           <th> Amount </th>
+	           
+           
+           </tr>
+           </thead>
+           <tbody>
+           <tr>
+           <td th:text="${Tariff}"></td>
+           <td th:text="${unit}"></td>
+           <td th:text="${display}"></td>
+           </tr>
+           </tbody>
+           </table>
+           
+           
+           
+			</div>
+		</form>
+	</div>
+
+
+
+</body>
+</html>

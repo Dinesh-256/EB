@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ff80ff;
+}
+.container{
+    font-size: 32px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(208, 201, 221, 0.4);
+   border:1px solid #400080;
+    margin: 100px auto;
+    padding: 10px;
+}
+h3{
+    color: #000000;
+    align-items: center;
+    text-align: center;
+}
+.select{
+    padding: 10px;
+    
+}
+.form-select{
+    font-size: 16px;
+}
+.input{
+    padding: 13px;
+}
+.btn{
+    text-align: center;
+    
+}
+    
+
+button{
+    background-color: #0080c0;
+    font-size: 20px;
+    text-align: center;
+}
+.anwser{
+	text-align: center;
+	color: #000000;
+	letter-spacing: 1px;
+	margin: 20px 80px;
+	padding: 20px;
+	 box-shadow: 5px 5px 20px red,
+                -5px -5px 20px yellow;
+	
+	 
+}
+.thead-dark{
+	background-color: green;
+}
+td,th{
+	
+	border:1px solid black;
+	text-align: center;
+	font-size: 25px;
+	border-collapse: collapse;
+}
